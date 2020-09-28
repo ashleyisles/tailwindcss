@@ -11842,11 +11842,13 @@ video {
 }
 
 .outline-none {
-  outline: 0 !important;
+  outline: 2px solid transparent !important;
+  outline-offset: 1px !important;
 }
 
 .focus\:outline-none:focus {
-  outline: 0 !important;
+  outline: 2px solid transparent !important;
+  outline-offset: 1px !important;
 }
 
 .overflow-auto {
@@ -30065,11 +30067,13 @@ video {
   }
 
   .sm\:outline-none {
-    outline: 0 !important;
+    outline: 2px solid transparent !important;
+    outline-offset: 1px !important;
   }
 
   .sm\:focus\:outline-none:focus {
-    outline: 0 !important;
+    outline: 2px solid transparent !important;
+    outline-offset: 1px !important;
   }
 
   .sm\:overflow-auto {
@@ -48258,11 +48262,13 @@ video {
   }
 
   .md\:outline-none {
-    outline: 0 !important;
+    outline: 2px solid transparent !important;
+    outline-offset: 1px !important;
   }
 
   .md\:focus\:outline-none:focus {
-    outline: 0 !important;
+    outline: 2px solid transparent !important;
+    outline-offset: 1px !important;
   }
 
   .md\:overflow-auto {
@@ -66451,11 +66457,13 @@ video {
   }
 
   .lg\:outline-none {
-    outline: 0 !important;
+    outline: 2px solid transparent !important;
+    outline-offset: 1px !important;
   }
 
   .lg\:focus\:outline-none:focus {
-    outline: 0 !important;
+    outline: 2px solid transparent !important;
+    outline-offset: 1px !important;
   }
 
   .lg\:overflow-auto {
@@ -84644,11 +84652,13 @@ video {
   }
 
   .xl\:outline-none {
-    outline: 0 !important;
+    outline: 2px solid transparent !important;
+    outline-offset: 1px !important;
   }
 
   .xl\:focus\:outline-none:focus {
-    outline: 0 !important;
+    outline: 2px solid transparent !important;
+    outline-offset: 1px !important;
   }
 
   .xl\:overflow-auto {
