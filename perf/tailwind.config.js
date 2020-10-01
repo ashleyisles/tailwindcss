@@ -23,6 +23,7 @@ module.exports = {
     'last',
     'odd',
     'even',
+    'invalid',
   ],
   plugins: [],
 }

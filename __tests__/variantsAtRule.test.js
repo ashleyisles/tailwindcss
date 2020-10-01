@@ -852,3 +852,24 @@ test('plugin variants can wrap rules in another at-rule using the raw PostCSS AP
     expect(result.warnings().length).toBe(0)
   })
 })
+
+test('it can generate invalid variants', () => {
+  const input = `
+    @variants invalid {
+      .banana { color: yellow; }
+      .chocolate { color: brown; }
+    }
+  `
+
+  const output = `
+    .banana { color: yellow; }
+    .chocolate { color: brown; }
+    .invalid\\:banana:invalid { color: yellow; }
+    .invalid\\:chocolate:invalid { color: brown; }
+  `
+
+  return run(input).then(result => {
+    expect(result.css).toMatchCss(output)
+    expect(result.warnings().length).toBe(0)
+  })
+})
